@@ -1,0 +1,170 @@
+:root {
+  /* Color */
+  --primair-achtergrond-kleur: #cecac5;
+  --secundair-achtergrond-kleur: #e60f0f;
+  --tertiar-achtergrond-kleur: #a01919;
+  --quartair-achtergrond-kleur: #201c1c;
+  /* Font-size */
+  /* Kleur */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 3px solid var(--secundair-achtergrond-kleur);
+  border-radius: 10px;
+  background-color: var(--primair-achtergrond-kleur);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Algemene stijl voor het formulier */
+form {
+  margin-bottom: 20px;
+}
+
+/* Stijl voor de zoekbalk */
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid var(--primair-achtergrond-kleur);
+  border-radius: 30px;
+}
+
+/* Stijl voor de zoekknop */
+input[type="submit"] {
+  padding: 8px 15px;
+  background-color: var(--secundair-achtergrond-kleur);
+  color: var(--quartair-achtergrond-kleur);
+  font-family: "Permanent Marker";
+  border: 1px solid var(--quartair-achtergrond-kleur);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--tertiar-achtergrond-kleur);
+}
+
+/* Stijl voor het zoekresultaatgebied */
+.search-result {
+  margin-top: 20px;
+}
+
+/* Stijl voor succesberichten */
+.success-message {
+  color: green;
+}
+
+/* Stijl voor foutberichten */
+.error-message {
+  color: red;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-family: "Permanent Marker";
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+  font-family: "Permanent Marker";
+}
+
+#map {
+  height: 400px;
+  margin-top: 20px;
+  border: 1px solid var(--secundair-achtergrond-kleur);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--secundair-achtergrond-kleur);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--secundair-achtergrond-kleur);
+  font-family: "Permanent Marker";
+}
+
+/* Responsive layout for the 5 Meest Recente Klachten section */
+@media only screen and (max-width: 1200px) {
+  table {
+    display: block;
+  }
+
+  tr {
+    width: 100%; /* Volledige breedte op kleinere schermen */
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  th,
+  td {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.success-message,
+.error-message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #28a745;
+  background-color: #d4edda;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+}

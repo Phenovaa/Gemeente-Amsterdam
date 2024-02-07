@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Kleur */
+  --primair-achtergrond-kleur: #cecac5;
+  --secundair-achtergrond-kleur: #e60f0f;
+  --tertiar-achtergrond-kleur: #a01919;
+  --quartair-achtergrond-kleur: #201c1c;
+  /* Font-size */
+  /* Kleur */
+}
+
+html {
+  background-image: url(image/White-brick-wall-background.jpeg);
+  background-size: 25%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primair-achtergrond-kleur);
+  box-shadow: 10px 6px 10px 6px var(--secundair-achtergrond-kleur);
+}
+
+.logo {
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+a {
+  font-family: "Permanent Marker";
+  font-weight: 100px;
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Permanent Marker";
+  font-size: 16px;
+  font-weight: bold;
+  width: 130px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: var(--secundair-achtergrond-kleur);
+  box-shadow: 10px 5px 5px red;
+}
+
+button:hover {
+  background-color: var(--tertiar-achtergrond-kleur);
+  box-shadow: 1px 1px 10px 1px var(--tertiar-achtergrond-kleur);
+}
+
+/* Responsieve stijlen voor kleinere schermen */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .navbar,
+  .navbar-2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .navbar-2 {
+    margin-top: 10px;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin: 5px; 
+  }
+
+  nav {
+    margin-bottom: 10px;
+  }
+
+  ul.navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 0;
+  }
+}

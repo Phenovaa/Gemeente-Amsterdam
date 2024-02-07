@@ -1,0 +1,190 @@
+/* Algemene reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Kleur variabelen */
+:root {
+  --primair-achtergrond-kleur: #cecac5;
+  --secundair-achtergrond-kleur: #e60f0f;
+  --tertiar-achtergrond-kleur: #a01919;
+  --quartair-achtergrond-kleur: #201c1c;
+}
+
+/* Nieuwe CSS-regels voor het klachtenformulier */
+
+section {
+  background-color: var(--primair-achtergrond-kleur);
+  border: 3px solid var(--secundair-achtergrond-kleur);
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 75px auto;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Permanent Marker";
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: "Permanent Marker";
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--secundair-achtergrond-kleur);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.input-file {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.input-file input[type="file"] {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.input-file label {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--secundair-achtergrond-kleur);
+  color: var(--primair-achtergrond-kleur);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-file span {
+  margin-left: 10px;
+}
+
+.input-file:hover label {
+  background-color: var(--tertiar-achtergrond-kleur);
+}
+
+.input-file:hover label:before {
+  content: "\2713";
+  margin-right: 5px;
+}
+
+.input-file label:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.input-file input[type="text"] {
+  width: calc(100% - 80px);
+}
+
+.input-file input[type="submit"] {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--secundair-achtergrond-kleur);
+  color: var(--primair-achtergrond-kleur);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-file input[type="submit"]:hover {
+  background-color: var(--tertiar-achtergrond-kleur);
+}
+
+.succes-bericht {
+  text-align: center;
+  font-family: "Permanent Marker";
+  color: green;
+  margin-top: 10px;
+  /* display: none; */ /* Verwijder of overschrijf deze regel */
+}
+
+/* Einde nieuwe CSS-regels voor het klachtenformulier */
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  .input-file {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-file input[type="text"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .input-file input[type="submit"] {
+    width: 100%;
+  }
+
+  .succes-bericht {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .samenvatting-klacht h2 {
+    font-size: 18px;
+  }
+
+  .samenvatting-klacht p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .titel-1,
+  .titel-2,
+  .titel-3 {
+    margin: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    margin-right: 50px;
+  }
+
+  .navbar-2 {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    margin-right: 100px;
+  }
+}

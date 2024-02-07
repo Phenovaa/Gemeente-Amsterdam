@@ -1,0 +1,181 @@
+/* Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root Variables */
+:root {
+  --primair-achtergrond-kleur: #cecac5;
+  --secundair-achtergrond-kleur: #e60f0f;
+  --tertiar-achtergrond-kleur: #a01919;
+  --quartair-achtergrond-kleur: #201c1c;
+}
+
+/* Body and HTML Styles */
+html {
+  background-image: url(image/White-brick-wall-background.jpeg);
+  background-size: 25%;
+}
+
+body {
+  font-family: "Permanent Marker";
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primair-achtergrond-kleur);
+  box-shadow: 10px 6px 10px 6px var(--secundair-achtergrond-kleur);
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 40px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 130px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: var(--secundair-achtergrond-kleur);
+  box-shadow: 10px 5px 5px red;
+}
+
+button:hover {
+  background-color: var(--tertiar-achtergrond-kleur);
+  box-shadow: 1px 1px 10px 1px var(--tertiar-achtergrond-kleur);
+}
+
+/* Navbar Styles */
+.navbar,
+.navbar-2 {
+  margin-right: 30px;
+  align-items: center;
+}
+
+/* Main Content Styles */
+main {
+  text-align: center;
+}
+
+/* Samenvatting Container Styles */
+.samenvatting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.titel-1,
+.titel-2,
+.titel-3 {
+  flex: 1;
+  margin: 50px;
+  padding: 15px;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 500px;
+  overflow: hidden;
+  background-color: var(--primair-achtergrond-kleur); /* Add this line */
+  border: 3px solid var(--secundair-achtergrond-kleur); /* Add this line */
+  border-radius: 30px;
+}
+
+.titel-1 h2,
+.titel-2 h2,
+.titel-3 h2,
+.titel-1 p,
+.titel-2 p,
+.titel-3 p {
+  margin: 8px;
+  font-size: 16px;
+}
+
+/* Foto Pagina Styles */
+.foto-pagina {
+  background-color: var(--primair-achtergrond-kleur);
+  border: 3px solid var(--secundair-achtergrond-kleur);
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
+.ams-foto {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Samenvatting Klacht Styles */
+.samenvatting-klacht {
+  background-color: var(--primair-achtergrond-kleur);
+  border: 3px solid var(--secundair-achtergrond-kleur);
+  padding: 20px;
+}
+
+.samenvatting-klacht h2,
+.samenvatting-klacht p {
+  text-align: center;
+  margin: 10px 0;
+  box-sizing: border-box;
+  font-family: "Permanent Marker";
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--primair-achtergrond-kleur);
+  border-top: 3px solid var(--secundair-achtergrond-kleur);
+  margin-top: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  font-family: "Permanent Marker";
+  font-weight: 100px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1400px) {
+  .samenvatting {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    margin: 30px;
+  }
+
+  .titel-1,
+  .titel-2,
+  .titel-3 {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    max-width: none;
+    height: auto;
+  }
+
+  .titel-1 h2,
+  .titel-2 h2,
+  .titel-3 h2,
+  .titel-1 p,
+  .titel-2 p,
+  .titel-3 p {
+    font-size: 14px;
+  }
+}

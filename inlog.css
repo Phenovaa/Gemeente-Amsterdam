@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color */
+  --primair-achtergrond-kleur: #cecac5;
+  --secundair-achtergrond-kleur: #e60f0f;
+  --tertiar-achtergrond-kleur: #a01919;
+  --quartair-achtergrond-kleur: #201c1c;
+  --greenb-effect-kleur: green;
+  /* Font-size */
+  /* Kleur */
+}
+
+section {
+  background: var(--primair-achtergrond-kleur);
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  margin-top: 250px;
+  font-family: "Permanent Marker", cursive;
+  border: 3px solid var(--secundair-achtergrond-kleur);
+  border-radius: 30px;
+}
+
+form {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button {
+  height: 100px;
+  width: 150px;
+  border: 3px solid var(--secundair-achtergrond-kleur);
+  border-radius: 30px;
+  background-color: var(--secundair-achtergrond-kleur);
+  font-size: 20px;
+  font-family: "Permanent Marker", cursive;
+  margin: 20px;
+}
+
+.button:hover {
+  background-color: var(--tertiar-achtergrond-kleur);
+}
